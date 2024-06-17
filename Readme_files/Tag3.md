@@ -141,3 +141,70 @@ Eine DVD-5 (Single-Layer DVD mit 4.7 GB) bietet Platz für:
 - **4.7 GB / 0.145 GB pro Minute** = **32.4 Minuten pro Single-Layer DVD**
 
 **Antwort:** Auf einer Single-Layer DVD hat es für **32.4 Minuten** unkomprimierte Film-Daten Platz.
+
+
+
+# Aufgaben
+
+## 1. Luminanz-Chrominanz-Beschreibung von Farben
+
+Verwenden Sie das Online-Tool: [Colorizer](https://colorizer.org/)
+
+### Codes übersetzen:
+
+- **RGB 255/255/255** entspricht **Weiß** und ergibt in YCbCr: **100**
+- **RGB 0/0/0** entspricht **Schwarz** und ergibt in YCbCr: **000**
+- **Y:0, Cb:0.5, Cr:0** entspricht der Farbe: **Rot**
+- **Y:0, Cb:-0.5, Cr:0** entspricht der Farbe: **Grün**
+- **Y:0, Cb:0, Cr:0.5** entspricht der Farbe: **Blau**
+- **Y:0, Cb:0, Cr:-0.5** entspricht der Farbe: **Dunkelgrün**
+- **Y:0.3, Cb:0.5, Cr:-0.17** entspricht der Farbe: **Hellrot**
+
+## 2. Grauwertberechnung eines RGB-Farbbildes
+
+Für ein RGB-Farbbild, das nur die Farbe Weiß als Hintergrund und ein Hellblau mit den Werten R=33, G=121, B=239 (8 Bit pro Farbkanal) verwendet, soll der entsprechende Grauwert berechnet werden. 
+
+### Lösung:
+
+Der Grauwert für Hellblau (R=33, G=121, B=239) wird wie folgt berechnet:
+
+\[ \text{Grauwert} = ((R \times 0.3) + (G \times 0.6) + (B \times 0.1)) \]
+
+1. Ersetzen Sie die Werte:
+
+\[ \text{Grauwert} = ((33 \times 0.3) + (121 \times 0.6) + (239 \times 0.1)) \]
+
+2. Berechnen Sie jeden Teil:
+
+\[ 33 \times 0.3 = 9.9 \]
+\[ 121 \times 0.6 = 72.6 \]
+\[ 239 \times 0.1 = 23.9 \]
+
+3. Addieren Sie die Ergebnisse:
+
+\[ 9.9 + 72.6 + 23.9 = 106.4 \]
+
+**Antwort:** Der Grauwert für das Hellblau beträgt **106.4**.
+
+## 3. Speicherersparnis bei Subsampling 4:1:1
+
+Subsampling ist eine Technik zur Reduzierung der Datenmenge bei der Bildkompression, indem Farbkanäle weniger häufig abgetastet werden als die Luminanzkanäle. Beim 4:1:1 Subsampling wird die chromatische Abtastung stark reduziert.
+
+### Lösung:
+
+- Bei 4:1:1 Subsampling wird die chromatische Information um den Faktor 4 reduziert, was bedeutet, dass für jede Gruppe von 4 Pixeln nur eine chromatische Information gespeichert wird.
+
+- Die ursprüngliche Speicheranforderung für die vollständige Abtastung (4:4:4) wäre:
+
+  \[ 4 \times (\text{Luminanz} + \text{Chrominanz} \text{(Cb)} + \text{Chrominanz} \text{(Cr)}) = 12 \text{ Einheiten} \]
+
+- Mit 4:1:1 Subsampling werden die chromatischen Kanäle (Cb und Cr) nur einmal pro 4 Pixel gespeichert:
+
+  \[ 4 \times \text{Luminanz} + 1 \times \text{Chrominanz (Cb)} + 1 \times \text{Chrominanz (Cr)} = 6 \text{ Einheiten} \]
+
+- Speicherersparnis:
+
+  \[ \frac{12 - 6}{12} = \frac{6}{12} = \frac{1}{2} = 50\% \]
+
+**Antwort:** Die Einsparung beträgt **50%**.
+
