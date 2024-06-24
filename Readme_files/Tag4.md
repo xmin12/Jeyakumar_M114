@@ -1,0 +1,15 @@
+# Die heutigen Themen:
+- Prüfungsbesprechung LB1
+- Einführung verlustbehaftete Komprimierung bei Bilder (Intraframe versus Interframe)
+- Einfache Verfahren wie Bildgrösse verkleinern etc.
+- Reduktion auf Graustufenbild (Umwandlung RGB zu Graustufe 60%-G, 30%-R, 10%-B)
+- Das Bildformat YCrCb
+- Subsampling bei YCrCb
+- DCT-Komprimierung bei JPG
+- Interframe-Komprimierung: Differenzbildspeicherung als Beispiel
+- GOP-Sequenz
+- Das Thema Bilder codieren/komprimieren ist somit abgeschlossen.
+- Musterlösungen auf Teams/Allgemein.
+- Einführung Kryptografie
+- Symmetrische Verschlüsselung (ROT, Vigenere, XOR als klassische und AES als aktuelles Verfahren)
+- Aufgaben im Aufgabenskript bis und mit Aufgabe 7 fertig gelöst. Die Aufgabe 7 ist fakultativ aber sehr aufschlussreich!
