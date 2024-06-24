@@ -2,6 +2,7 @@
 
 ## 1. Tabelle mit Dezimal-, Hexadezimal- und Binärzahlen
 
+![image](https://github.com/xmin12/Jeyakumar_M114/assets/112725311/1b18d78a-c399-4ae1-b2d6-a754fb0d4ee3)
 
 
 ## 2. Dezimalzahl 911 in Binär
